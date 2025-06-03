@@ -1,0 +1,37 @@
+body {
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+textarea,
+input {
+    background: #44475a;
+    color: #f8f8f2;
+    border: 1px solid #6272a4;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #50fa7b;
+    color: #282a36;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+pre {
+    background: #44475a;
+    padding: 15px;
+    white-space: pre-wrap;
+    border-radius: 5px;
+    overflow-x: auto;
+}

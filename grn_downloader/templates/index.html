@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GRN PDF Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>🔽 GRN PDF Downloader</h2>
+        <form method="post">
+            <label>Enter GRN Numbers (comma-separated):</label>
+            <textarea name="grns" rows="3" placeholder="e.g. 123456789, 987654321"></textarea>
+
+            <label>Download Folder Path (optional):</label>
+            <input type="text" name="path" placeholder="Leave blank to use default: /downloads">
+
+            <button type="submit">Start Download</button>
+        </form>
+
+        {% if logs %}
+            <h3>📋 Logs</h3>
+            <pre>{{ logs | join('\n') }}</pre>
+        {% endif %}
+    </div>
+</body>
+</html>
